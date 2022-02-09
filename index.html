@@ -13,14 +13,17 @@
   <button class="LoginBtnSSO" id="SSOloginTag" onclick="inicioSSO()">MyLogin</button>
 </body>
 <script>
+
+  cerveSSO.init({
+    ssoUrl: 'https://d5bsa1l5zad5t.cloudfront.net',
+    client: 'corona',
+    showUserData: true,
+    msgUnderAge: 'Sorry, you are under age limit and are prohibited from entering this site!',
+    linkTerms: 'https://www.ab-inbev.com/terms-conditions.html'
+  });
+  
   function inicioSSO() {
-    cerveSSO.init({
-      ssoUrl: 'https://gersonangelabinbev.github.io/TestGlobalSSO/',
-      client: 'corona',
-      showUserData: true,
-      msgUnderAge: 'Sorry, you are under age limit and are prohibited from entering this site!',
-      linkTerms: 'https://www.ab-inbev.com/terms-conditions.html'
-    });
+
   }
 </script>
 
